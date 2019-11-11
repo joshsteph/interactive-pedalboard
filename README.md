@@ -2,7 +2,7 @@
 
 I've always geeked out over guitar pedals and especially review videos of the latest gear. I wanted to explore another way to showcase gear online with a simple interactive pedalboard. So I rigged up my pedals, recorded a few things, took some pictures, and tried to figure out how to put it all together. I knew I wanted a loop to play while the user clicked through each pedal to hear how it is affected. 
 
-This project uses [howler.js](https://github.com/goldfire/howler.js/) to handle the audio componenent requiring no outside dependancies other than a simple JavaScript file. 
+This project uses [howler.js](https://github.com/goldfire/howler.js/) to handle the audio component requiring no outside dependencies other than a simple JavaScript file. 
 
 ## Recording the loops
 
