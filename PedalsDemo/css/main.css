@@ -1,0 +1,292 @@
+/* Styles here have been inspired by elektron.se and their demo of the Analog Drive guitar pedal */
+
+body, html, main{
+	background-color: #252525;
+	color: #eaeaea;
+	font-family: "Helvetica", sans-serif;	
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+.content-row {
+	padding: 0;
+	background-color: #424949;
+	display: table;
+	width: 100%;
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.content {
+	float: none;
+	text-align: left;
+	display: table-cell;
+}
+
+.jumbo {
+	padding: 3vw 15vw 3vw 3vw;
+	font-size: 150%;
+	background-color: #252525;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 23px;
+}
+
+.pedalboard-container {
+	background-image: url('../img/Pedals.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	height: 45vw;
+	float: left;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+}
+
+.controls-container {
+	width: 20%;
+	height: 45vw;
+	float: left;
+	position: relative;
+	background-color: #FEF9E7;
+}
+
+.play-section {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 12vw; 
+	background-color: #B7950B;
+	background-image: url('../img/jag.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.btn-section {
+	padding: 0.3vw;
+}
+
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row {
+	width: 100%;
+	height: 3vw;
+	display: table;
+	table-layout: fixed;
+}
+
+
+.pedal-button {
+	display: table-cell;
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+	width: 97%;
+	color: #252525;
+	background-color: transparent;
+	padding: 0.6em 0.8em 0.5em 0.8em;
+	border-radius: 0;
+	border: 2px solid;
+	position: relative;
+	margin: 0.3vw;
+	font-size: 1vw;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #252525;
+	color:#FEF9E7;
+}
+
+button:focus {
+	outline:none;
+	box-shadow: 0 0 0 3px rgb(244, 156, 18);
+}
+
+.pedal-name {
+	padding: 1vw;
+	font-size: 1.2vw;
+}
+
+#jhs-desc,
+#reverb-desc,
+#drive-desc,
+#eventide-desc,
+#stonedeaf-desc,
+#tremolo-desc,
+#delay-desc {
+	display: none;
+	color: #252525;
+}
+
+#clean-desc {
+	display: block;
+	color: #252525;
+}
+
+#pedals1,
+#pedals,
+#delay,
+#drive,
+#reverb,
+#tremolo,
+#eventide,
+#stonedeaf,
+#jhs  {
+    opacity: 1;
+    position: relative;
+    margin: 0px;
+    overflow: none;
+}
+
+#pedals1,
+#delay,
+#drive,
+#reverb,
+#tremolo,
+#eventide,
+#stonedeaf,
+#jhs {
+	display: none;
+}
+
+#pedals {
+	display: none;
+}
+
+.playbtn {
+	font-size: 6vw;
+	cursor: pointer;
+	display: block;
+	color: #FEF9E7;
+}
+
+
+.pausebtn {
+	font-size: 6vw;
+	cursor: pointer;
+	display: none;
+	color: #FEF9E7;
+
+}
+
+footer {
+	background-color: #252525;
+	float: none;
+	position: relative;
+  	width: 100%;
+  	margin-top: 2vw;
+  	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+	.pedalboard-container {
+		width: 100%;
+		clear:both;
+		height: 55vw;
+	}
+	.controls-container {
+		width: 100%;
+		clear:both;
+		height: 50vw;
+	}
+	.play-section {
+		height: 22.5vw;
+		width: 50%;
+		float: left;
+	}
+	.first-row,
+	.second-row,
+	.third-row,
+	.fourth-row {
+		height: 5vw;
+		width: 50%;
+		float: right;
+	}
+	.description-section,.pedal-name {
+	clear: both;	
+	height: 22vw;
+	font-size: 2vw;
+	padding-top: 1vw;
+	}
+
+	.playbtn,.pausebtn {
+		font-size: 18vw;
+	}
+	button {
+		font-size: 2vw;
+	}
+
+	}
+
+@media only screen and (max-width: 636px) {
+	.pedalboard-container {
+	width: 100%;
+	clear:both;
+	height: 55vw;
+	}
+	.controls-container {
+		width: 100%;
+		clear:both;
+		height: 150vw;
+	}
+	.play-section {
+		height: 20vw;
+		width: 100%;
+	}
+	.first-row,
+	.second-row,
+	.third-row,
+	.fourth-row {
+		height: 10vw;
+		width: 100%;
+	}
+	.description-section,.pedal-name {
+		height: 75vw;
+		font-size: 5vw;
+		vertical-align: text-bottom;
+	}
+	.playbtn,.pausebtn {
+		font-size: 18vw;
+	}
+	.btn-section {
+		clear: both;
+		height: 54vw;
+		padding-top: 1vw;
+	}
+	button {
+		font-size: 5vw;
+	}
+	h1 {
+		line-height: 40px;
+	}
+
+	}
+
+}

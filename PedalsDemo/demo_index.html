@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Interactive Pedalboard</title>
+  </head>
+ 
+  <body>
+    <div id="page">
+      <div class="content-row vertical-align">
+        <div class="content">
+          <div class="jumbo">
+            <h1>Interactive Pedalboard</h1>
+            <p>Pressing <i class="far fa-play-circle"></i> below will begin a guitar loop for you to hear through each effect pedal. Click the effect names and have fun!</p>
+          </div>  
+       
+        
+
+
+        <!-- Pedalboard Image Container -->
+        <div class="pedalboard-container" data-w="1280">
+          <div class="img-column">
+            <img src="img/Pedals.jpg"  id="pedals1" alt=""/>
+            <img src="img/Pedals.jpg"  id="pedals" alt=""/>
+            <img src="img/Pedals-cutout-delay.png"  id="delay" alt=""/>
+            <img src="img/Pedals-cutout-drive.png"   id="drive" alt=""/>
+            <img src="img/Pedals-cutout-JHS_Muff.png"  id="jhs" alt=""/>
+            <img src="img/Pedals-cutout-reverb.png"   id="reverb" alt=""/>
+            <img src="img/Pedals-cutout-StoneDeaf.png"  id="stonedeaf" alt=""/>
+            <img src="img/Pedals-cuttout-eventide.png"  id="eventide" alt=""/>
+            <img src="img/Pedals-cutout-tremolo.png"  id="tremolo" alt=""/>
+          </div>
+        </div>
+        
+
+        <div class="controls-container">
+            <!-- Play/Pause button -->
+
+          <div class="play-section">
+            <span class= "playbtn" id="play">
+              <i class="far fa-play-circle"></i> 
+            </span>
+
+            <span class="pausebtn" id="pause">
+              <i class="far fa-pause-circle"></i> 
+            </span>    
+          </div>
+   
+
+            <!-- Pedal selector buttons -->
+
+          <div class="btn-section">
+
+            <div class="first-row">
+              <div class="pedal-button">
+                <button id="cleanbtn">Clean</button>
+              </div>
+              <div class="pedal-button">
+                <button id="jhsbtn"> Muffaletta</button>
+              </div>  
+            </div>
+            
+            <div class="second-row"> 
+              <div class="pedal-button"> 
+                <button id="drivebtn"> Analog Drive</button>
+              </div>  
+
+              <div class="pedal-button">
+                <button id="reverbbtn"> Reverberator</button>
+              </div>  
+            </div> 
+            
+            <div class="third-row"> 
+              <div class="pedal-button">
+                <button id="eventidebtn"> Eventide H9</button>
+              </div>  
+              <div class="pedal-button">
+                <button id="stonedeafbtn"> Fig Fumb</button>
+              </div>  
+            </div>  
+
+            <div class="fourth-row">
+              <div class="pedal-button">
+                <button id="tremolobtn"> Supa Trem</button>
+              </div>
+              <div class="pedal-button">
+                <button id="delaybtn"> Timeline</button>
+              </div>  
+            </div>  
+
+          </div>
+
+          <!--Descriptions of each pedal-->
+
+          <div class="description-section">
+            <div class="pedal-name" id="jhs-desc">
+              <h2>JHS Muffaletta</h2>
+              <p>Classic Fuzz modeled after the Electro Harmonix Big Muff. This one has a voice selector to emulate different era's of the Big Muff circuit.</p>
+              <p>Now playing is their own JHS circuit.</p>
+            </div>
+
+            <div class="pedal-name" id="reverb-desc">
+              <h2>Dr Scientist Reverberator</h2>
+              <p>Boasting nine different reverb effects, you can go from the deepest, wettest recesses of space to a tone-enhancing small room.</p>
+              <p>Currently the mix knob is all the way up on a plate setting.</p>
+            </div>
+
+            <div class="pedal-name" id="drive-desc">
+              <h2>Elektron Analog Drive</h2>
+              <p>Hosting eight analog drive circuits- classic overdrive to high gain distortion in one box with user presets. </p>
+              <p>Now playing is their version of a Rat distortion.</p>
+            </div>
+
+            <div class="pedal-name" id="eventide-desc">
+              <h2>Eventide H9</h2>
+              <p>Utilizing advanced digital algorithms, the H9 contains studio quality delay and modulation effects.</p>
+              <p>Now playing is the Vapor Trail setting- a long decaying reverb with modulation.</p>
+            </div>
+
+            <div class="pedal-name" id="stonedeaf-desc">
+              <h2>Stone Deaf Fig Fumb</h2>
+              <p>Another Big Muff fuzz clone with Stone Deaf's paracentric filter eq and built in gate. The eq allows you to dial in forever-sustaining notes while the gate keeps your signal dead quiet when not playing.</p>
+            </div>
+
+            <div class="pedal-name" id="tremolo-desc">
+              <h2>Fulltone Supa Trem</h2>
+              <p>Vintage 60's amp-like tremolo from the Fulltone Supa Trem using an Opto-1 photocell to control the trem rate. Variable rate switch and built in volume control with 15db clean boost.</p>
+            </div>
+
+            <div class="pedal-name" id="delay-desc">
+              <h2>Strymon Timeline</h2>
+              <p>Timeline provides twelve studio-class, fully tweakable delay machines and 200 user presets.</p>
+              <p>Now playing is a preset using classic analog delay with a slow modulated chorus.</p>
+            </div> 
+            <div class="pedal-name" id="clean-desc">
+              <h2></h2>
+              <p>All sounds recorded using the actual pedals shown here along with a Fender Jaguar guitar and Orange Rocker amp.</p>
+            </div>                                                 
+
+        </div> 
+      </div>  
+
+    </div>             
+    
+    </div>  
+             
+    <footer>
+        <p>Built by Josh Stephens &nbsp;|&nbsp;2019</p>
+    </footer>
+   
+
+   <!-- Audio Player -->
+   <script src="js/howler.js"></script>
+   <!--Custom JS -->
+   <script src="js/demo.js"></script>
+  </body>
+</html>
